@@ -1,0 +1,188 @@
+/* -------------------------------------------
+   GREEN NAVIGATION BAR
+-------------------------------------------- */
+.custom-blue-nav {
+  background: #198754 !important; /* Bootstrap success green */
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+  color: white !important;
+}
+
+/* Navigation category buttons */
+.category-btn {
+  background: transparent;
+  border: none;
+  color: #eaffea;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.category-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.category-btn:active {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Search bar styles */
+.search-input {
+  border-radius: 30px;
+  border: none;
+  padding-left: 15px;
+}
+
+.search-btn {
+  border-radius: 30px;
+  font-weight: 600;
+  background: white;
+  color: #198754;
+}
+
+.search-btn:hover {
+  background: #e6ffe6;
+}
+
+/* -------------------------------------------
+   CARDS — clean white with green accents
+-------------------------------------------- */
+.card {
+  border: none !important;
+  border-radius: 14px !important;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  width: 330px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Card text */
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a3622; /* deep green text */
+}
+
+.card-text {
+  font-size: 14.5px;
+  color: #2d6146;
+}
+
+/* Read more button */
+.card .btn-primary {
+  background: #198754;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.card .btn-primary:hover {
+  background: #146c43;
+}
+
+/* -------------------------------------------
+   PAGE TITLE
+-------------------------------------------- */
+h2 {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #0a3622;
+}
+
+h2 .badge {
+  background: #198754;
+}
+
+/* -------------------------------------------
+   GRID LAYOUT
+-------------------------------------------- */
+.NewsContainer,
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* -------------------------------------------
+   RESPONSIVE
+-------------------------------------------- */
+@media (max-width: 768px) {
+  .card {
+    width: 90% !important;
+  }
+
+  .navbar-nav {
+    gap: 0 !important;
+  }
+}
+
+.news-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card {
+  background: #ffffff;
+}
+.news-card {
+  background: #ffffff !important;
+  color: #0a3622 !important; /* dark green readable text */
+}
+
+
+/* Force equal card height */
+.news-card {
+  height: 420px;        /* same size for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Fix image height */
+.news-img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Title + description block */
+.card-content {
+  min-height: 120px;    /* ensures equal height */
+  max-height: 120px;
+  overflow: hidden;
+}
+
+/* Read more button at bottom */
+.read-btn {
+  width: 100%;
+  margin-top: auto;
+  background: #198754;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.read-btn:hover {
+  background: #146c43;
+}
+
